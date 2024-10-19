@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "challenge-987cf"
-  }
+  },
+  "targets": {
+    "challenge-987cf": {
+      "hosting": {
+        "production": [
+          "challenge-987cf"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
