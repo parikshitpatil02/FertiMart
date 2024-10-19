@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import './Login.css'
 import { Link, useHistory } from 'react-router-dom'
 import { auth } from './firebase';
+import fertimartLogoDark from './assets/fertimart-logo-dark.png'
 
 
 function Login() {
@@ -39,7 +40,7 @@ function Login() {
   return (
     <div className='login'>
         <Link to='/'>
-        <img className='login__logo' src='https://drive.google.com/uc?export=view&id=1hDYzdVihac2LIgi5rpznCF9VKOn_CQOY'/>
+        <img className='login__logo' src={fertimartLogoDark}/>
         </Link>
         
         <div className='login__container'>

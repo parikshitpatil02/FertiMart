@@ -3,6 +3,7 @@ import "./Checkout.css";
 import Subtotal from "./Subtotal";
 import { useStateValue } from './StateProvider';
 import CheckoutProduct from './CheckoutProduct';
+import discount_banner from './assets/discount_banner.jpeg'
 
 function Checkout() {
   const [{ basket, user}, dispatch] = useStateValue();
@@ -10,7 +11,7 @@ function Checkout() {
   return (
     <div className='checkout'>
         <div className='checkout__left'>
-          <img className='checkout__ad' src='https://drive.google.com/uc?export=view&id=1uA-l-U7mmMeQBc9RtEkpLcGoTDpv0CF_'/>
+          <img className='checkout__ad' src={discount_banner}/>
     
           <div>
             <h3> Hello, {user?.email}</h3>

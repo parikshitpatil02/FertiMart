@@ -5,6 +5,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { useStateValue } from './StateProvider';
 import { Link } from "react-router-dom";
 import { auth } from './firebase';
+import fertimartLogoWhite from './assets/fertimart-logo-white.png'
 
 function Header() {
     const [{ basket, user }, dispatch] = useStateValue();
@@ -18,7 +19,7 @@ function Header() {
     return (
         <div className='header'>
             <Link to="/" >
-                <img className='header__logo' src='https://drive.google.com/uc?export=view&id=1OPQXO1t-hHk3KosS3scCtKw6fCO9BBJx'>
+                <img className='header__logo' src={fertimartLogoWhite}>
                 </img>
 
             </Link>
